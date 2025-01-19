@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Neon Dark Theme",
+  "version": "1.0",
+  "description": "Changes website background to black and text to neon green.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
